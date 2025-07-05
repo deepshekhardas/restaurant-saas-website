@@ -1,0 +1,15 @@
+[
+  {
+    "id": "b6812658-044a-4c08-a6fc-f9eedbd7d3c5",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "",
+    "restaurant_name": "Test Restaurant",
+    "inquiry_type": "general",
+    "subject": "Testing the contact form",
+    "message": "This is a test message to verify that the backend integration is working properly.",
+    "newsletter": false,
+    "timestamp": "2025-07-05T02:33:50.199777"
+  }
+]
