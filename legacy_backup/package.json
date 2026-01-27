@@ -1,0 +1,28 @@
+{
+  "name": "resturant",
+  "version": "1.0.0",
+  "description": "A modern, responsive website for a restaurant technology SaaS platform. Built with HTML5, Tailwind CSS, and vanilla JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepshekhardas/restaurant-saas-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/deepshekhardas/restaurant-saas-website/issues"
+  },
+  "homepage": "https://github.com/deepshekhardas/restaurant-saas-website#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  }
+}

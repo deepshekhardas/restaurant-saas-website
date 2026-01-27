@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - RestaurantTech</title>
+    <meta name="description"
+        content="Discover powerful features for restaurant websites, online ordering, marketing tools, and AI chat support.">
+
+    <!-- Tailwind CSS (Local) -->
+    <link href="../css/output.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body
+    class="font-sans bg-slate-950 text-white selection:bg-indigo-500 selection:text-white antialiased overflow-x-hidden">
+    <!-- Navigation -->
+    <nav
+        class="fixed top-0 left-0 right-0 bg-slate-950/80 backdrop-blur-xl border-b border-indigo-500/20 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center space-x-2">
+                        <div
+                            class="w-8 h-8 mr-2 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                            <i class="fas fa-utensils text-white text-sm"></i>
+                        </div>
+                        <span
+                            class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-indigo-200">RestaurantTech</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html"
+                        class="text-gray-400 hover:text-white transition-colors duration-300 text-sm font-medium tracking-wide">Home</a>
+                    <a href="features.html"
+                        class="text-white transition-colors duration-300 text-sm font-medium tracking-wide relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-indigo-500 after:rounded-full">Features</a>
+                    <a href="templates.html"
+                        class="text-gray-400 hover:text-white transition-colors duration-300 text-sm font-medium tracking-wide">Templates</a>
+                    <a href="pricing.html"
+                        class="text-gray-400 hover:text-white transition-colors duration-300 text-sm font-medium tracking-wide">Pricing</a>
+                    <a href="contact.html"
+                        class="text-gray-400 hover:text-white transition-colors duration-300 text-sm font-medium tracking-wide">Contact</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="account.html"
+                        class="text-gray-400 hover:text-white transition-colors duration-300 text-sm font-medium tracking-wide">Sign
+                        In</a>
+                    <a href="account.html"
+                        class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors duration-200 text-sm font-medium tracking-wide">Start
+                        Free Trial</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-indigo-500/20">
+            <div class="px-4 py-2 space-y-1">
+                <a href="../index.html"
+                    class="block px-3 py-2 text-gray-400 hover:text-white transition-colors duration-300 rounded-lg">Home</a>
+                <a href="features.html"
+                    class="block px-3 py-2 text-white bg-indigo-600/20 transition-colors duration-300 rounded-lg">Features</a>
+                <a href="templates.html"
+                    class="block px-3 py-2 text-gray-400 hover:text-white transition-colors duration-300 rounded-lg">Templates</a>
+                <a href="pricing.html"
+                    class="block px-3 py-2 text-gray-400 hover:text-white transition-colors duration-300 rounded-lg">Pricing</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 text-gray-400 hover:text-white transition-colors duration-300 rounded-lg">Contact</a>
+                <div class="border-t border-indigo-500/20 pt-2">
+                    <a href="account.html"
+                        class="block px-3 py-2 text-gray-400 hover:text-white transition-colors duration-300 rounded-lg">Sign
+                        In</a>
+                    <a href="account.html"
+                        class="block px-3 py-2 bg-indigo-600 text-white rounded-lg mx-3 text-center hover:bg-indigo-700 transition-colors duration-200">Start
+                        Free
+                        Trial</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-[70vh] flex items-center pt-32 pb-20 relative overflow-hidden">
+        <!-- Ambient Background Effects -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-900/40 via-slate-950 to-slate-950">
+        </div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none">
+            <div
+                class="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[100px] mix-blend-screen animate-pulse">
+            </div>
+            <div
+                class="absolute bottom-[20%] right-[10%] w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-[100px] mix-blend-screen">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-5xl mx-auto animate-fade-in-up">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 hover:bg-white/10 transition-colors cursor-default">
+                    <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                    <span class="text-indigo-200 text-sm font-medium tracking-wider uppercase">Premium Restaurant
+                        Solutions</span>
+                </div>
+
+                <h1 class="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-tight tracking-tight">
+                    Redefining
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-indigo-100 to-white drop-shadow-[0_0_30px_rgba(99,102,241,0.5)]">Excellence</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-slate-400 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+                    Experience the future of restaurant management. Where <span
+                        class="text-indigo-300 font-medium">limitless customization</span> meets <span
+                        class="text-indigo-300 font-medium">stunning design</span>.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="account.html"
+                        class="group relative px-8 py-4 bg-white text-slate-900 rounded-full text-lg font-bold hover:bg-indigo-50 transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-10px_rgba(255,255,255,0.5)] hover:-translate-y-1">
+                        Start Free Trial
+                        <span
+                            class="hidden group-hover:inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                    <a href="#features-grid"
+                        class="px-8 py-4 bg-white/5 text-white border border-white/10 rounded-full text-lg font-medium hover:bg-white/10 hover:border-white/30 transition-all duration-300 backdrop-blur-md">
+                        Explore Features
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Ordering Feature -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-shopping-cart text-accent-600 text-xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">Online Ordering System</h2>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Complete online ordering solution with payment processing, delivery management, and real-time
+                        order tracking.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent-600 mr-3"></i>
+                            <span>Integrated payment processing (Stripe, PayPal, Square)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent-600 mr-3"></i>
+                            <span>Real-time order tracking and notifications</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent-600 mr-3"></i>
+                            <span>Delivery zone management and scheduling</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent-600 mr-3"></i>
+                            <span>Mobile-optimized ordering experience</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-accent-600 mr-3"></i>
+                            <span>Inventory management and menu updates</span>
+                        </li>
+                    </ul>
+                    <a href="../pages/pricing.html"
+                        class="bg-accent-600 text-white px-6 py-3 rounded-lg hover:bg-accent-700 transition-colors duration-200 inline-block">
+                        Get Started
+                    </a>
+                </div>
+                <div class="bg-gray-100 rounded-2xl p-8 h-96 flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-mobile-alt text-6xl text-gray-400 mb-4"></i>
+                        <p class="text-gray-600">Online Ordering Interface Screenshot</p>
+                        <p class="text-sm text-gray-500">Mobile & Desktop Optimized</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Builder Feature -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="bg-white rounded-2xl p-8 h-96 flex items-center justify-center shadow-lg">
+                        <div class="text-center">
+                            <i class="fas fa-paint-brush text-6xl text-gray-400 mb-4"></i>
+                            <p class="text-gray-600">Drag & Drop Website Builder</p>
+                            <p class="text-sm text-gray-500">No Coding Required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-paint-brush text-primary-600 text-xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">Website Builder</h2>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Create stunning restaurant websites with our intuitive drag-and-drop builder. No technical
+                        skills required.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary-600 mr-3"></i>
+                            <span>50+ professional restaurant templates</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary-600 mr-3"></i>
+                            <span>Drag-and-drop visual editor</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary-600 mr-3"></i>
+                            <span>Mobile-responsive design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary-600 mr-3"></i>
+                            <span>SEO optimization tools</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary-600 mr-3"></i>
+                            <span>Custom domain support</span>
+                        </li>
+                    </ul>
+                    <a href="../pages/templates.html"
+                        class="bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors duration-200 inline-block">
+                        View Templates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Tools Feature -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-bullhorn text-purple-600 text-xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">Marketing Tools</h2>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Comprehensive marketing suite to attract new customers and keep them coming back for more.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Email marketing campaigns</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Social media integration</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Customer loyalty programs</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Review management system</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Analytics and reporting</span>
+                        </li>
+                    </ul>
+                    <a href="../pages/pricing.html"
+                        class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors duration-200 inline-block">
+                        Learn More
+                    </a>
+                </div>
+                <div class="bg-gray-100 rounded-2xl p-8 h-96 flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-chart-line text-6xl text-gray-400 mb-4"></i>
+                        <p class="text-gray-600">Marketing Dashboard</p>
+                        <p class="text-sm text-gray-500">Analytics & Campaign Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Feature -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="bg-white rounded-2xl p-8 h-96 flex items-center justify-center shadow-lg">
+                        <div class="text-center">
+                            <i class="fas fa-robot text-6xl text-gray-400 mb-4"></i>
+                            <p class="text-gray-600">AI Chat Interface</p>
+                            <p class="text-sm text-gray-500">24/7 Customer Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-robot text-orange-600 text-xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900">AI-Powered Chat</h2>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-6">
+                        24/7 AI customer support that handles orders, answers questions, and provides personalized
+                        recommendations.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-600 mr-3"></i>
+                            <span>Natural language processing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-600 mr-3"></i>
+                            <span>Order taking and modifications</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-600 mr-3"></i>
+                            <span>Menu recommendations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-600 mr-3"></i>
+                            <span>Multi-language support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-orange-600 mr-3"></i>
+                            <span>Seamless human handoff</span>
+                        </li>
+                    </ul>
+                    <a href="../pages/contact.html"
+                        class="bg-orange-600 text-white px-6 py-3 rounded-lg hover:bg-orange-700 transition-colors duration-200 inline-block">
+                        Try Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section id="features-grid" class="py-24 bg-slate-950 relative">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Feature 1 -->
+                        <div
+                            class="group p-8 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-indigo-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(99,102,241,0.2)]">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-inner border border-white/5">
+                                <i
+                                    class="fas fa-calendar-alt text-indigo-400 text-2xl group-hover:text-white transition-colors"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Table Reservation</h3>
+                            <p class="text-slate-400 leading-relaxed font-light">Allow customers to book tables online.
+                                Manage capacity and prevent overbooking with our smart system.</p>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div
+                            class="group p-8 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-indigo-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(99,102,241,0.2)]">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-inner border border-white/5">
+                                <i
+                                    class="fas fa-truck text-indigo-400 text-2xl group-hover:text-white transition-colors"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Delivery Management</h3>
+                            <p class="text-slate-400 leading-relaxed font-light">Streamline your delivery operations.
+                                Integration with major delivery partners and real-time tracking.</p>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div
+                            class="group p-8 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-indigo-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(99,102,241,0.2)]">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-inner border border-white/5">
+                                <i
+                                    class="fas fa-star text-indigo-400 text-2xl group-hover:text-white transition-colors"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Reviews & Ratings</h3>
+                            <p class="text-slate-400 leading-relaxed font-light">Collect and manage customer reviews.
+                                Build trust and improve your reputation with automated feedback loops.</p>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div
+                            class="group p-8 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-indigo-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(99,102,241,0.2)]">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-inner border border-white/5">
+                                <i
+                                    class="fas fa-chart-bar text-indigo-400 text-2xl group-hover:text-white transition-colors"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Analytics Dashboard</h3>
+                            <p class="text-slate-400 leading-relaxed font-light">Gain insights into your business
+                                performance. Track sales, popular items, and customer trends.</p>
+                        </div>
+
+                        <!-- Feature 5 -->
+                        <div
+                            class="group p-8 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-indigo-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(99,102,241,0.2)]">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-inner border border-white/5">
+                                <i
+                                    class="fas fa-users text-indigo-400 text-2xl group-hover:text-white transition-colors"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Staff Management</h3>
+                            <p class="text-slate-400 leading-relaxed font-light">Manage simplified scheduling, payroll,
+                                and performance tracking for your entire team.</p>
+                        </div>
+
+                        <!-- Feature 6 -->
+                        <div
+                            class="group p-8 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-sm hover:bg-white/10 hover:border-indigo-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-20px_rgba(99,102,241,0.2)]">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-inner border border-white/5">
+                                <i
+                                    class="fas fa-shield-alt text-indigo-400 text-2xl group-hover:text-white transition-colors"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Secure Payments</h3>
+                            <p class="text-slate-400 leading-relaxed font-light">Accept payments securely with
+                                integrated processing. Support for all major cards and digital wallets.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="py-16 bg-primary-600">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        Ready to transform your restaurant?
+                    </h2>
+                    <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                        Join thousands of restaurants already using RestaurantTech to grow their business.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="account.html"
+                            class="bg-white text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+                            Start Free Trial
+                        </a>
+                        <a href="contact.html"
+                            class="border border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors duration-200">
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-gray-900 text-white py-12">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <!-- Company Info -->
+                        <div>
+                            <div class="flex items-center space-x-2 mb-4">
+                                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-utensils text-white text-sm"></i>
+                                </div>
+                                <span class="text-xl font-bold">RestaurantTech</span>
+                            </div>
+                            <p class="text-gray-400 mb-4">
+                                Empowering restaurants with modern technology solutions for growth and success.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Product -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4">Product</h3>
+                            <ul class="space-y-2">
+                                <li><a href="features.html"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+                                </li>
+                                <li><a href="templates.html"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Templates</a>
+                                </li>
+                                <li><a href="pricing.html"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Pricing</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Integrations</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Support -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4">Support</h3>
+                            <ul class="space-y-2">
+                                <li><a href="contact.html"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Contact
+                                        Us</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Help
+                                        Center</a></li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Documentation</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">API
+                                        Reference</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Company -->
+                        <div>
+                            <h3 class="text-lg font-semibold mb-4">Company</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">About
+                                        Us</a></li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Blog</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Careers</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white transition-colors duration-200">Privacy
+                                        Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                        <p class="text-gray-400">
+                            © 2025 RestaurantTech. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- JavaScript -->
+            <script src="../js/main.js"></script>
+</body>
+
+</html>
